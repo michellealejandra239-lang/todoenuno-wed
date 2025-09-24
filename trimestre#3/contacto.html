@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - TodoEnUno</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <h1>TodoEnUno</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="edutips.html">EduTips</a></li>
+        <li><a href="salud.html">Salud Fácil</a></li>
+        <li><a href="noticias.html">Noticias Express</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>Si conoces alguna forma efectiva de estudiar, un tip de salud útil o una noticia 
+         interesante que quieras compartir, ¡contáctanos! Nos encanta recibir sugerencias 
+         de nuestra comunidad.</p>
+      
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="categoria">Categoría:</label>
+        <select id="categoria" name="categoria" required>
+          <option value="">Selecciona una categoría</option>
+          <option value="edutips">EduTips</option>
+          <option value="salud">Salud Fácil</option>
+          <option value="noticias">Noticias Express</option>
+          <option value="general">Comentario general</option>
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu sugerencia, tip o comentario aquí..."></textarea>
+
+        <button type="submit">Enviar Mensaje</button>
+      </form>
+      
+      <div style="margin-top: 30px; text-align: center;">
+        <h3>¿Prefieres otro método de contacto?</h3>
+        <p>También puedes encontrarnos en nuestras redes sociales o enviarnos un email directo.</p>
+        <p><strong>Email:</strong> contacto@todonenuno.com</p>
+        <p><strong>Redes sociales:</strong> @TodoEnUnoWeb</p>
+      </div>
+    </section>
+  </main>
+
+
+</body>
+</html>
