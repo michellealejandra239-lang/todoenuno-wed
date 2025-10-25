@@ -4,57 +4,58 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - TodoEnUno</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
   <header>
-    <h1>TodoEnUno</h1>
+    <h1>Todo En Uno</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="edutips.html">EduTips</a></li>
-        <li><a href="salud.html">Salud Fácil</a></li>
-        <li><a href="noticias.html">Noticias Express</a></li>
+        <li><a href="edutips.html">Tips de Estudio</a></li>
+        <li><a href="salud.html">Tips Salud</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
+  <div id="contenedor-notificaciones"></div>
+
   <main>
-    <section id="contacto">
-      <h2>Contáctanos</h2>
-      <p>Si conoces alguna forma efectiva de estudiar, un tip de salud útil o una noticia 
-         interesante que quieras compartir, ¡contáctanos! Nos encanta recibir sugerencias 
-         de nuestra comunidad.</p>
+    <section class="seccion-contenedor">
+      <h2 class="titulo-seccion">Contáctanos</h2>
+      <p class="texto-centrado">Si sabes sobre una forma efectiva de estudios, un Tip de Salud o una noticia que quieras compartir, contáctanos.</p>
       
-      <form action="#" method="post">
+      <form id="formulario-contacto" class="formulario-contacto">
         <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+        <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
 
         <label for="correo">Correo electrónico:</label>
-        <input type="email" id="correo" name="correo" required>
+        <input type="email" id="correo" name="correo" required placeholder="ejemplo@correo.com">
 
         <label for="categoria">Categoría:</label>
-        <select id="categoria" name="categoria" required>
-          <option value="">Selecciona una categoría</option>
-          <option value="edutips">EduTips</option>
-          <option value="salud">Salud Fácil</option>
-          <option value="noticias">Noticias Express</option>
-          <option value="general">Comentario general</option>
+        <select id="categoria" name="categoria">
+          <option value="estudio">Tip de Estudio</option>
+          <option value="salud">Consejo de Salud</option>
+          <option value="noticia">Noticia</option>
+          <option value="otro">Otro</option>
         </select>
 
         <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu sugerencia, tip o comentario aquí..."></textarea>
+        <textarea id="mensaje" name="mensaje" required placeholder="Escribe tu mensaje aquí..."></textarea>
 
-        <button type="submit">Enviar Mensaje</button>
+        <button type="submit" class="boton-enviar">Enviar Mensaje</button>
       </form>
-      
-      <div style="margin-top: 30px; text-align: center;">
-      </div>
     </section>
   </main>
 
+  <footer>
+    <p>&copy; 2024 TodoEnUno</p>
+  </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>
