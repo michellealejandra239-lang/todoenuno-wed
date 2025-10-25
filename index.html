@@ -3,35 +3,69 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TodoEnUno - Inicio</title>
+  <title>Todo En Uno</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
   <header>
-    <h1>Bienvenido a TodoEnUno</h1>
+    <h1>Todo En Uno</h1>
     <nav>
       <ul>
         <li><a href="index.html">Inicio</a></li>
-        <li><a href="edutips.html">EduTips</a></li>
-        <li><a href="salud.html">Salud Fácil</a></li>
-        <li><a href="noticias.html">Noticias Express</a></li>
+        <li><a href="edutips.html">Tips de Estudio</a></li>
+        <li><a href="salud.html">Tips de Salud</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section style="text-align:center; margin-top: 20px;">
-      <h2>Bienvenido a TodoEnUno</h2>
-      <p>Tu sitio de tips educativos, salud y noticias.</p>
+  <div id="contenedor-notificaciones"></div>
 
-      <div class="button-container">
-        <a href="edutips.html"><button class="nav-button">EduTips</button></a>
-        <a href="salud.html"><button class="nav-button">Salud Fácil</button></a>
-        <a href="noticias.html"><button class="nav-button">Noticias</button></a>
+  <main>
+    <section class="seccion-contenedor seccion-intro">
+      <h2 class="titulo-principal">Bienvenido a Todo En Uno</h2>
+      <p class="descripcion-principal">
+        Todo En Uno es tu portal integral de información donde encontrarás contenido útil para tu día a día. 
+        Descubre tips efectivos de estudio para mejorar tu rendimiento académico, consejos prácticos de salud 
+        para mantener tu bienestar, y mantente actualizado con las noticias más relevantes del mundo.
+      </p>
+      
+      <div class="contenedor-info">
+        <h3 class="titulo-info">¿Qué encontrarás aquí?</h3>
+        
+        <div class="item-info">
+          <h4 class="subtitulo-info">Tips de Estudio</h4>
+          <p class="texto-info">
+            Aprende técnicas y métodos probados para organizar tu tiempo, estudiar de manera efectiva 
+            y alcanzar mejores resultados académicos. Desde la técnica Pomodoro hasta estrategias de trabajo en equipo.
+          </p>
+        </div>
+        
+        <div class="item-info">
+          <h4 class="subtitulo-info">Tips de Salud</h4>
+          <p class="texto-info">
+            Descubre consejos simples pero efectivos para cuidar tu salud física y mental. Desde hábitos 
+            de hidratación y alimentación hasta técnicas para mejorar la calidad de tu sueño.
+          </p>
+        </div>
+        
+        <div class="item-info">
+          <h4 class="subtitulo-info">Noticias</h4>
+          <p class="texto-info">
+            Mantente informado sobre los últimos avances científicos, tecnológicos y acontecimientos 
+            relevantes del mundo. Información concisa y actualizada para que estés al día.
+          </p>
+        </div>
       </div>
     </section>
   </main>
 
+  <footer>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 </html>
